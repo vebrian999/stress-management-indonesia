@@ -117,46 +117,52 @@ body {
   }
 }
 
+/* CSS untuk navbar dan sidebar */
+#navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(-100%);
+  z-index: -1;
+}
 
-  #navbar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    transform: translateY(-100%);
-    z-index: -1;
-  }
+#navbar.scrolled::before {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  #navbar.scrolled::before {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#navbar.scrolled * {
+  color: black !important;
+}
 
-  /* #navbar * {
-    transition: color 0.3s ease-in-out;
-  } */
+#navbar.scrolled #search-navbar::placeholder {
+  color: #6b7280;
+}
 
-  #navbar.scrolled * {
-    color: black !important;
-  }
+#navbar.scrolled .text-gray-500 {
+  color: #6b7280 !important;
+}
 
-  #navbar.scrolled #search-navbar::placeholder {
-    color: #6B7280;
-  }
+#navbar.scrolled #search-navbar {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+}
 
-  #navbar.scrolled .text-gray-500 {
-    color: #6B7280 !important;
-  }
+/* Tambahan CSS untuk sidebar */
+#sidebar-menu {
+  background-color: white !important;
+}
 
-  #navbar.scrolled #search-navbar {
-    background-color: #F3F4F6;
-    border-color: #D1D5DB;
-  }
+#sidebar-menu * {
+  color: #1f2937 !important; /* Warna teks lebih gelap untuk kontras yang lebih baik */
+}
 
-
-  
+#sidebar-menu a:hover {
+  background-color: #f3f4f6 !important;
+}

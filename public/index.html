@@ -115,22 +115,22 @@
         </div>
 
         <!-- Sidebar Menu (for mobile) -->
-        <div id="sidebar-menu" class="fixed inset-y-0 left-0 z-40 w-64 transition-transform transform -translate-x-full bg-gray-800 md:hidden">
+        <div id="sidebar-menu" class="fixed inset-y-0 left-0 z-40 w-64 transition-transform transform -translate-x-full bg-white md:hidden">
           <div class="p-4">
             <div class="flex justify-between items-center mb-4">
-              <a href="#" class="text-white text-xl font-bold">Menu</a>
-              <button type="button" data-drawer-hide="sidebar-menu" class="text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <a href="#" class="text-gray-800 text-xl font-bold">Menu</a>
+              <button type="button" data-drawer-hide="sidebar-menu" class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
             <ul class="space-y-2">
-              <li><a href="#" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Home</a></li>
-              <li><a href="#" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">About Us</a></li>
-              <li><a href="#" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Contact Us</a></li>
-              <li><a href="#" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Blog</a></li>
-              <li><a href="#" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md">Gallery</a></li>
+              <li><a href="#" class="block text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md">Home</a></li>
+              <li><a href="#" class="block text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md">About Us</a></li>
+              <li><a href="#" class="block text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md">Contact Us</a></li>
+              <li><a href="#" class="block text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md">Blog</a></li>
+              <li><a href="#" class="block text-gray-800 hover:bg-gray-100 px-3 py-2 rounded-md">Gallery</a></li>
             </ul>
           </div>
         </div>
@@ -149,33 +149,71 @@
       <script src="./js/app.js"></script>
 
       <!-- akhir navbar -->
-
       <div id="indicators-carousel" class="relative w-full md:h-screen" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden md:h-screen">
+        <div class="relative h-screen overflow-hidden md:h-screen">
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute inset-0 flex items-center justify-start p-4 md:p-14 text-white bg-black bg-opacity-50">
+              <div>
+                <h1 class="text-4xl font-bold">Be Your <span class="text-primary-color">Happy Self</span> Holistically.</h1>
+                <p class="mt-4 text-lg">To have a <span class="underline">healthy brain,</span> you have to have a <span class="underline">healthy body</span></p>
+                <div class="flex space-x-4">
+                  <button class="mt-6 px-6 py-2.5 font-normal text-white bg-primary-color rounded-full hover:underline hover:bg-[#4A1056] focus:outline-none">Find Out More</button>
+                  <button class="mt-6 px-6 py-2.5 font-normal text-white bg-transparent rounded-full hover:underline focus:outline-none border border-white">Learn More</button>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute inset-0 flex items-center justify-start p-4 md:p-14 text-white bg-black bg-opacity-50">
+              <div>
+                <h1 class="text-4xl font-bold">Kualitas dan Kenyamanan</h1>
+                <p class="mt-4 text-lg">Kami berkomitmen untuk memberikan yang terbaik untuk Anda.</p>
+                <button class="mt-6 px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-primary-color focus:outline-none">Temukan Selengkapnya</button>
+              </div>
+            </div>
           </div>
           <!-- Item 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute inset-0 flex items-center justify-start p-4 md:p-14 text-white bg-black bg-opacity-50">
+              <div>
+                <h1 class="text-4xl font-bold">Jadilah Bagian dari Komunitas Kami</h1>
+                <p class="mt-4 text-lg">Bergabunglah dengan kami dan dapatkan pengalaman yang luar biasa.</p>
+                <button class="mt-6 px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-primary-color focus:outline-none">Bergabung Sekarang</button>
+              </div>
+            </div>
           </div>
           <!-- Item 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute inset-0 flex items-center justify-start p-4 md:p-14 text-white bg-black bg-opacity-50">
+              <div>
+                <h1 class="text-4xl font-bold">Penawaran Spesial Bulan Ini!</h1>
+                <p class="mt-4 text-lg">Jangan lewatkan kesempatan untuk mendapatkan diskon menarik.</p>
+                <button class="mt-6 px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-primary-color focus:outline-none">Lihat Penawaran</button>
+              </div>
+            </div>
           </div>
           <!-- Item 5 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <img src="./asset/jumbotron carausel 1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+            <div class="absolute inset-0 flex items-center justify-start p-4 md:p-14 text-white bg-black bg-opacity-50">
+              <div>
+                <h1 class="text-4xl font-bold">Temukan Inspirasi Baru</h1>
+                <p class="mt-4 text-lg">Jelajahi koleksi kami untuk menemukan sesuatu yang baru.</p>
+                <button class="mt-6 px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg hover:bg-primary-color focus:outline-none">Mulai Jelajah</button>
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- Slider indicators -->
-        <div class="absolute z-30 flex flex-col space-y-4 my-2 -translate-x-1/2 rtl:space-x-reverse top-1/3 right-6">
+        <div class="absolute z-30 md:flex flex-col hidden space-y-4 my-2 -translate-x-1/2 rtl:space-x-reverse top-1/3 right-6">
           <button type="button" class="w-3 h-3 rounded-full bg-white focus:outline-none" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
           <button type="button" class="w-3 h-3 rounded-full bg-white focus:outline-none" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
           <button type="button" class="w-3 h-3 rounded-full bg-white focus:outline-none" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
@@ -184,7 +222,7 @@
         </div>
 
         <!-- Slider controls -->
-        <button type="button" class="absolute top-[180px] end-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <button type="button" class="absolute top-[180px] end-0 z-30 flex md:block hidden items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
           <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-primary-color group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
@@ -192,7 +230,7 @@
             <span class="sr-only">Previous</span>
           </span>
         </button>
-        <button type="button" class="absolute bottom-[270px] end-0 z-30 flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <button type="button" class="absolute bottom-[270px] end-0 z-30 md:block hidden flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-next>
           <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-primary-color group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -202,48 +240,50 @@
         </button>
       </div>
     </header>
-    <main>
-      <div id="content" class="container">
-        <section class="mt-10">
+
+    <main class="mx-4 md:mx-20">
+      <div id="content" class="container mx-auto">
+        <!-- Menambahkan mx-auto -->
+        <section class="mt-10 md:-mx-14">
           <article>
-            <div class="flex justify-between">
+            <div class="md:flex justify-between items-center">
               <!-- Kolom 1: Title and description -->
-              <div class="w-1/2">
-                <!-- Menggunakan w-1/3 agar proporsional -->
-                <div class="bg-primary-color py-5 px-16">
-                  <h1 class="text-4xl font-semibold text-white">Reach Map</h1>
+              <div class="md:flex-1">
+                <div class="bg-primary-color md:py-5 py-2.5 inline-block md:-mx-16">
+                  <!-- Menghapus -mx-20 -->
+                  <h1 class="md:text-4xl font-semibold text-xl text-white px-4">Reach Map</h1>
+                  <!-- Menghapus mx-20 dari h1 -->
                 </div>
-                <div class="p-8">
-                  <p class="text-lg text-gray-700 px-10">Our total reach from 2014-2022 with the assumption that every person we reach directly influences 5 other people in their circle is <strong>735,070</strong> people.</p>
+                <div class="mt-4">
+                  <p class="md:text-lg md:px-0 text-gray-700">Our total reach from 2014-2022 with the assumption that every person we reach directly influences 5 other people in their circle is <strong>735,070</strong> people.</p>
                 </div>
-                <div class="ml-20">
-                  <img src="./asset/Donut Chart (1).png" alt="chart" />
+                <div class="mt-4 md:block hidden">
+                  <img src="./asset/Donut Chart (1).png" alt="Chart showing reach statistics" />
                 </div>
               </div>
 
               <!-- Kolom 2: Image -->
-              <div class="w-1/2 flex items-center justify-end px-16">
-                <!-- Memastikan gambar di posisikan di kanan -->
-                <img src="./asset/reach.jpeg" alt="Map" class="max-w-full h-auto" style="margin-right: 0" />
+              <div class="flex items-center justify-end ml-auto md:mt-0 mt-5 md:px-0">
+                <img src="./asset/reach.jpeg" alt="Map showing reach" class="md:w-[780px] md:h-[434px]" />
               </div>
             </div>
           </article>
         </section>
 
-        <section class="mt-10">
+        <section class="mt-20 md:-mx-14">
           <article>
-            <div class="flex flex-col md:flex-row space-x-0 md:space-x-5">
+            <div class="flex flex-col-reverse md:flex-row md:justify-between space-x-0 md:space-x-5">
               <!-- Kolom Gambar -->
-              <div class="w-full md:w-1/2 pl-16">
-                <img src="./asset/gambar 1.png" alt="section2" class="w-full h-auto" />
+              <div class="w-full">
+                <img src="./asset/gambar 1.png" alt="section2" class="w-[620px] h-[497]" />
               </div>
 
               <!-- Kolom Teks -->
-              <div class="w-full md:w-1/2">
-                <div class="bg-primary-color py-5 px-14 text-right">
-                  <h1 class="text-3xl font-semibold text-white">What Is Stress Manajement Indonesia?</h1>
+              <div class="w-full md:pt-0 pt-4">
+                <div class="bg-primary-color md:py-5 py-2 text-left md:text-right md:-mx-16">
+                  <h1 class="md:text-3xl text-lg font-semibold text-white md:px-16 px-6">What Is Stress Manajement Indonesia?</h1>
                 </div>
-                <p class="text-right px-16 py-2 text-gray-700">
+                <p class="md:text-right md:px-0 px-2 py-4 text-gray-700">
                   Stress Management Indonesia (SMI) is an organization focused on promoting mental and physical well-being through holistic approaches. Founded in 2014, SMI's mission is to create a healthier community by offering solutions
                   for managing mental health, including stress relief strategies. Their approach emphasizes a combination of neuroscience, physical health, and humanistic solutions to improve mental resilience and overall happiness. They
                   provide evidence-based programs that are realistic and easy to practice in daily life, helping individuals navigate stress more effectively.
@@ -253,17 +293,17 @@
           </article>
         </section>
 
-        <section class="mt-10">
+        <section class="mt-20 md:-mx-14">
           <article>
             <div>
-              <div class="w-1/2">
-                <div class="bg-primary-color py-5 px-16">
-                  <h1 class="text-4xl font-semibold text-white">Testimonial</h1>
+              <div class="">
+                <div class="bg-primary-color py-2 md:py-5 md:-mx-16 inline-block">
+                  <h1 class="md:text-4xl text-xl font-semibold px-4 text-white">Testimonial</h1>
                 </div>
               </div>
               <div>
                 <!-- awal testimoni -->
-                <article id="locations" class="md:mx-auto mt-10">
+                <article id="locations" class="md:-mx-14 mt-10">
                   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
 
                   <script type="module">
@@ -305,10 +345,10 @@
                   </script>
 
                   <section class="bg-primary-color bg-opacity-20">
-                    <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+                    <div class="md:mx-5 md:max-w-[1490px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
                       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
                         <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-                          <h2 class="text-4xl font-bold text-left tracking-tight text-primary-color sm:text-4xl">What they <br /><span class="text-primary-color"> say about us </span></h2>
+                          <h2 class="md:text-4xl text-xl font-bold text-left tracking-tight text-primary-color sm:text-4xl">What they <br /><span class="text-primary-color"> say about us </span></h2>
 
                           <p class="mt-4 text-gray-700 text-left">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor dictum quam, sit amet pharetra arcu blandit a. Donec et eros erat. Aliquam quis tempor libero, non convallis dui.
@@ -466,13 +506,13 @@
                         </div>
                       </div>
                       <div class="mt-8 flex justify-center gap-4 lg:hidden">
-                        <button aria-label="Previous slide" id="keen-slider-previous" class="rounded-full border border-blue-600 p-4 text-blue-600 transition hover:bg-blue-600 hover:text-white">
+                        <button aria-label="Previous slide" id="keen-slider-previous" class="rounded-full border border-pribg-primary-color p-4 text-pribg-primary-color transition hover:bg-primary-color hover:text-white">
                           <svg class="size-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                           </svg>
                         </button>
 
-                        <button aria-label="Next slide" id="keen-slider-next" class="rounded-full border border-blue-600 p-4 text-blue-600 transition hover:bg-blue-600 hover:text-white">
+                        <button aria-label="Next slide" id="keen-slider-next" class="rounded-full border border-pribg-primary-color p-4 text-pribg-primary-color transition hover:bg-primary-color hover:text-white">
                           <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                           </svg>
@@ -487,50 +527,52 @@
           </article>
         </section>
 
-        <section class="mt-10">
+        <section class="mt-20 md:-mx-14">
           <article>
-            <div class="flex flex-col md:flex-row space-x-0 md:space-x-5">
-              <!-- Kolom Gambar -->
-              <div class="w-full md:w-1/2 pl-16">
-                <img src="./asset/sponsor.png" alt="section2" class="w-full h-auto" />
+            <div class="flex flex-col md:flex-row md:space-x-5 justify-between">
+              <!-- Kolom Teks (ditampilkan terlebih dahulu di mobile) -->
+              <div class="mt-10 md:mt-0">
+                <div class="bg-primary-color py-2.5 md:py-5 md:-mx-16 md:text-right">
+                  <h1 class="md:text-3xl text-xl font-semibold md:px-16 px-4 text-white">Our Collaboration</h1>
+                </div>
+                <p class="md:text-right py-2 text-gray-700">Here are some of the esteemed clients we have collaborated with.</p>
               </div>
 
-              <!-- Kolom Teks -->
-              <div class="w-full md:w-1/2">
-                <div class="bg-primary-color py-5 px-14 text-right">
-                  <h1 class="text-3xl font-semibold text-white">Our Collaboration</h1>
-                </div>
-                <p class="text-right px-16 py-2 text-gray-700">Here are some of the esteemed clients we have collaborated with.</p>
+              <!-- Kolom Gambar -->
+              <div class="">
+                <img src="./asset/sponsor.png" alt="section2" class="w-[620px] h-[500px]" />
               </div>
             </div>
           </article>
         </section>
 
-        <section class="mt-10">
+        <section class="my-20 md:-mx-14">
           <article>
-            <div class="flex justify-between">
+            <div class="md:flex justify-between">
               <!-- Kolom 1: Title and description -->
-              <div class="w-1/2">
+              <div class="md:mb-0 mb-16">
                 <!-- Menggunakan w-1/3 agar proporsional -->
-                <div class="bg-primary-color py-5 px-16">
-                  <h1 class="text-4xl font-semibold text-white">Join Our App</h1>
+                <div class="bg-primary-color py-2.5 md:py-5 md:-mx-16">
+                  <h1 class="md:text-4xl text-xl font-semibold text-white md:px-16 px-4">Join Our App</h1>
                 </div>
-                <div class="p-8 pt-10">
-                  <h1 class="text-secondary-color text-6xl font-semibold pl-7 pb-5">Happy Self</h1>
-                  <p class="text-lg text-gray-700 px-7">There is no better time than now. Take your first step towards a happier <strong>YOU</strong> today</p>
+                <div class="py-8 pt-10">
+                  <h1 class="text-secondary-color text-4xl md:text-6xl font-semibold pb-5">Happy Self</h1>
+                  <p class="text-lg text-gray-700">There is no better time than now. Take your first step towards a happier <strong>YOU</strong> today</p>
                 </div>
-                <div class="ml-14">
+                <div class="">
                   <div class="flex space-x-4">
-                    <a href=""> <img src="./asset/appstore.png" alt="appstore" class="w-36 h-auto" /></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.stressmanagementindonesia.happyself&pcampaignid=web_share"> <img src="./asset/playstore (1).png" alt="playstore" class="w-36 h-auto" /></a>
+                    <a href=""> <img src="./asset/appstore.png" alt="appstore" class="h-[56px] w-[167px]" /></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.stressmanagementindonesia.happyself&pcampaignid=web_share">
+                      <img src="./asset/playstore (1).png" alt="playstore" class="h-[56px] w-[167px]" />
+                    </a>
                   </div>
                 </div>
               </div>
 
               <!-- Kolom 2: Image -->
-              <div class="w-1/2 flex items-center justify-end px-16">
+              <div class="md:w-1/2 flex items-center justify-end">
                 <!-- Memastikan gambar di posisikan di kanan -->
-                <img src="./asset/happyselfAPP.png" alt="Map" class="max-w-full h-auto" style="margin-right: 0" />
+                <img src="./asset/happyselfAPP.png" alt="Map" class="w-[525px] h-[521px]" />
               </div>
             </div>
           </article>
@@ -540,13 +582,13 @@
       <aside></aside>
 
       <!-- awal footer -->
-      <footer class="bg-primary-color bg-opacity-60 bg-[url('./asset/background-footer.png')] bg-center bg-no-repeat bg-cover bg-fixed bg-blend-multiply" aria-labelledby="footer-heading">
+      <footer class="bg-primary-color -mx-4 bg-opacity-60 bg-[url('./asset/background-footer.png')] bg-center bg-no-repeat bg-cover bg-fixed bg-blend-multiply md:-mx-20" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
-        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-14">
+        <div class="mx-4 md:mx-16 max-w-full pb-8 pt-16 sm:pt-24 lg:pt-14">
           <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-8 mr-16">
               <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="./asset/logo.png" class="w-32" alt="SMI logo" />
+                <img src="./asset/logo.png" class="md:w-32 w-20" alt="SMI logo" />
               </a>
               <p class="text-sm leading-6 text-white">This growth plan will help you reach your resolutions and achieve the goals you have been striving towards.</p>
               <div class="flex space-x-3">
