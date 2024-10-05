@@ -17,7 +17,7 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-.scroll-container {
+/* .scroll-container {
   scroll-snap-type: x mandatory;
   scroll-padding: 0 50%;
 }
@@ -30,7 +30,7 @@ body {
 
 [x-cloak] {
   display: none;
-}
+} */
 
 .progress {
   animation: progress;
@@ -51,7 +51,7 @@ body {
   }
 }
 
-.scrolled {
+/* .scrolled {
   background-color: white;
   color: black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -95,7 +95,7 @@ body {
 }
 .scrolled .search-button path {
   fill: black;
-}
+} */
 
 @layer utilities {
   .after-line {
@@ -116,3 +116,47 @@ body {
     left: 0;
   }
 }
+
+
+  #navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+
+  #navbar.scrolled::before {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* #navbar * {
+    transition: color 0.3s ease-in-out;
+  } */
+
+  #navbar.scrolled * {
+    color: black !important;
+  }
+
+  #navbar.scrolled #search-navbar::placeholder {
+    color: #6B7280;
+  }
+
+  #navbar.scrolled .text-gray-500 {
+    color: #6B7280 !important;
+  }
+
+  #navbar.scrolled #search-navbar {
+    background-color: #F3F4F6;
+    border-color: #D1D5DB;
+  }
+
+
+  
