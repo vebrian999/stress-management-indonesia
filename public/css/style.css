@@ -166,3 +166,46 @@ body {
 #sidebar-menu a:hover {
   background-color: #f3f4f6 !important;
 }
+
+/* carusel di bawah ini */
+
+/* Custom CSS for carousel indicators */
+.carousel-indicator {
+  width: 0.75rem; /* w-3 in Tailwind */
+  height: 0.75rem; /* h-3 in Tailwind */
+  border-radius: 9999px; /* rounded-full in Tailwind */
+  background-color: #9ca3af; /* Default color (gray-400 in Tailwind) */
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicator:focus {
+  outline: none;
+}
+
+/* Active indicator */
+.carousel-indicator[aria-current="true"] {
+  background-color: #dadde1; /* Active color (gray-600 in Tailwind) */
+}
+
+/* Hover effect */
+.carousel-indicator:hover {
+  background-color: #dadde1; /* Hover color (gray-500 in Tailwind) */
+}
+
+:root {
+  --indicator-color: #dadde1;
+  --indicator-color-active: #682E74;
+  --indicator-color-hover: #6b7280;
+}
+
+.carousel-indicator {
+  background-color: var(--indicator-color);
+}
+
+.carousel-indicator[aria-current="true"] {
+  background-color: var(--indicator-color-active);
+}
+
+.carousel-indicator:hover {
+  background-color: var(--indicator-color-hover);
+}
