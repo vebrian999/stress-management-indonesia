@@ -25,7 +25,7 @@
         <!-- Filter overlay -->
         <div class="absolute inset-0 bg-[#172432] opacity-40"></div>
 
-        <!-- Content -->
+        <!-- Content jika bermasalah tambahkan z-10-->
         <div class="relative z-10">
           <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 ease-in-out">
             <div class="max-w-screen-2xl mx-5 md:mx-16 flex flex-wrap items-center justify-between py-4">
@@ -150,11 +150,32 @@
 
           <!-- JS for Flowbite Drawer -->
           <script>
-            document.querySelector("[data-drawer-target]").addEventListener("click", function () {
-              document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
-            });
-            document.querySelector("[data-drawer-hide]").addEventListener("click", function () {
-              document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
+            document.addEventListener("DOMContentLoaded", function () {
+              // Event listener untuk membuka sidebar
+              document.querySelector("[data-drawer-target]").addEventListener("click", function () {
+                document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
+
+                // Menunggu hingga elemen backdrop dibuat, kemudian ubah z-index nya menjadi 0
+                setTimeout(function () {
+                  const backdrop = document.querySelector("[drawer-backdrop]");
+                  if (backdrop) {
+                    backdrop.style.zIndex = "0"; // Mengubah z-index dari backdrop
+                  }
+                }, 100); // Delay untuk memastikan elemen backdrop sudah muncul
+              });
+
+              // Event listener untuk menutup sidebar
+              document.querySelector("[data-drawer-hide]").addEventListener("click", function () {
+                document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
+
+                // Mengembalikan z-index backdrop jika perlu
+                setTimeout(function () {
+                  const backdrop = document.querySelector("[drawer-backdrop]");
+                  if (backdrop) {
+                    backdrop.style.zIndex = "30"; // Mengembalikan z-index ke nilai default
+                  }
+                }, 100);
+              });
             });
           </script>
 

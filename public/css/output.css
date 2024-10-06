@@ -620,10 +620,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .inset-0 {
   inset: 0px;
 }
@@ -698,10 +694,6 @@ video {
   top: 2.5rem;
 }
 
-.top-32 {
-  top: 8rem;
-}
-
 .top-72 {
   top: 18rem;
 }
@@ -738,16 +730,16 @@ video {
   z-index: 50;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .order-1 {
   order: 1;
 }
 
 .order-2 {
   order: 2;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .-mx-20 {
@@ -843,16 +835,6 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .-mr-1 {
@@ -1162,10 +1144,6 @@ video {
 
 .w-3\.5 {
   width: 0.875rem;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .w-32 {
@@ -2581,12 +2559,12 @@ video {
     position: sticky;
   }
 
-  .md\:top-72 {
-    top: 18rem;
-  }
-
   .md\:top-32 {
     top: 8rem;
+  }
+
+  .md\:top-72 {
+    top: 18rem;
   }
 
   .md\:order-1 {
@@ -2627,6 +2605,11 @@ video {
     margin-right: 4rem;
   }
 
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .md\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
@@ -2645,21 +2628,6 @@ video {
   .md\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-  }
-
-  .md\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .md\:mx-36 {
-    margin-left: 9rem;
-    margin-right: 9rem;
-  }
-
-  .md\:my-5 {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
   }
 
   .md\:mb-0 {
@@ -2688,14 +2656,6 @@ video {
 
   .md\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .md\:block {
@@ -2742,6 +2702,10 @@ video {
     width: 33.333333%;
   }
 
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
   .md\:w-32 {
     width: 8rem;
   }
@@ -2764,14 +2728,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-3\/4 {
-    width: 75%;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:max-w-\[1490px\] {
@@ -2863,16 +2819,6 @@ video {
     margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
   }
 
-  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:self-start {
-    align-self: flex-start;
-  }
-
   .md\:border-0 {
     border-width: 0px;
   }
@@ -2891,10 +2837,6 @@ video {
 
   .md\:p-5 {
     padding: 1.25rem;
-  }
-
-  .md\:p-4 {
-    padding: 1rem;
   }
 
   .md\:px-0 {
