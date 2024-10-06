@@ -151,28 +151,32 @@
           <!-- JS for Flowbite Drawer -->
           <script>
             document.addEventListener("DOMContentLoaded", function () {
+              const sidebarMenu = document.getElementById("sidebar-menu");
+
               // Event listener untuk membuka sidebar
               document.querySelector("[data-drawer-target]").addEventListener("click", function () {
-                document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
+                sidebarMenu.classList.toggle("-translate-x-full");
 
-                // Menunggu hingga elemen backdrop dibuat, kemudian ubah z-index nya menjadi 0
+                // Tunggu hingga backdrop muncul, kemudian atur z-index
                 setTimeout(function () {
                   const backdrop = document.querySelector("[drawer-backdrop]");
                   if (backdrop) {
-                    backdrop.style.zIndex = "0"; // Mengubah z-index dari backdrop
+                    backdrop.style.zIndex = "0"; // Ubah z-index backdrop menjadi 0 agar tidak menutupi sidebar
+                    backdrop.style.pointerEvents = "none"; // Pastikan backdrop tidak bisa di-klik
                   }
-                }, 100); // Delay untuk memastikan elemen backdrop sudah muncul
+                }, 100);
               });
 
               // Event listener untuk menutup sidebar
               document.querySelector("[data-drawer-hide]").addEventListener("click", function () {
-                document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
+                sidebarMenu.classList.toggle("-translate-x-full");
 
-                // Mengembalikan z-index backdrop jika perlu
+                // Kembalikan z-index dan pointer-events dari backdrop
                 setTimeout(function () {
                   const backdrop = document.querySelector("[drawer-backdrop]");
                   if (backdrop) {
-                    backdrop.style.zIndex = "30"; // Mengembalikan z-index ke nilai default
+                    backdrop.style.zIndex = "30"; // Kembalikan z-index backdrop
+                    backdrop.style.pointerEvents = "auto"; // Kembalikan fungsi klik pada backdrop
                   }
                 }, 100);
               });

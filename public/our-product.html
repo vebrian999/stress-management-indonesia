@@ -25,7 +25,7 @@
         <!-- Filter overlay -->
         <div class="absolute inset-0 bg-[#172432] opacity-40"></div>
 
-        <!-- Content -->
+        <!-- Content jika bermasalah tambahkan z-10-->
         <div class="relative z-10">
           <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 ease-in-out">
             <div class="max-w-screen-2xl mx-5 md:mx-16 flex flex-wrap items-center justify-between py-4">
@@ -150,11 +150,36 @@
 
           <!-- JS for Flowbite Drawer -->
           <script>
-            document.querySelector("[data-drawer-target]").addEventListener("click", function () {
-              document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
-            });
-            document.querySelector("[data-drawer-hide]").addEventListener("click", function () {
-              document.getElementById("sidebar-menu").classList.toggle("-translate-x-full");
+            document.addEventListener("DOMContentLoaded", function () {
+              const sidebarMenu = document.getElementById("sidebar-menu");
+
+              // Event listener untuk membuka sidebar
+              document.querySelector("[data-drawer-target]").addEventListener("click", function () {
+                sidebarMenu.classList.toggle("-translate-x-full");
+
+                // Tunggu hingga backdrop muncul, kemudian atur z-index
+                setTimeout(function () {
+                  const backdrop = document.querySelector("[drawer-backdrop]");
+                  if (backdrop) {
+                    backdrop.style.zIndex = "0"; // Ubah z-index backdrop menjadi 0 agar tidak menutupi sidebar
+                    backdrop.style.pointerEvents = "none"; // Pastikan backdrop tidak bisa di-klik
+                  }
+                }, 100);
+              });
+
+              // Event listener untuk menutup sidebar
+              document.querySelector("[data-drawer-hide]").addEventListener("click", function () {
+                sidebarMenu.classList.toggle("-translate-x-full");
+
+                // Kembalikan z-index dan pointer-events dari backdrop
+                setTimeout(function () {
+                  const backdrop = document.querySelector("[drawer-backdrop]");
+                  if (backdrop) {
+                    backdrop.style.zIndex = "30"; // Kembalikan z-index backdrop
+                    backdrop.style.pointerEvents = "auto"; // Kembalikan fungsi klik pada backdrop
+                  }
+                }, 100);
+              });
             });
           </script>
 
@@ -190,7 +215,7 @@
             </div>
 
             <!-- card product -->
-            <div class="md:flex justify-center mb-20 ">
+            <div class="md:flex justify-center mb-20">
               <div class="relative md:mx-10 md:my-10 my-6 w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md">
                 <a href="https://shopee.co.id/Self-Love-Journaling-i.504044759.23616848833?xptdk=e620a1b1-3dd3-4f1f-b20f-110bec771380">
                   <img class="h-60 w-[384px] rounded-t-lg object-cover" src="./asset/buku-self-love-jurnal.png" alt="product image" />
